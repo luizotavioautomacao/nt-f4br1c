@@ -465,6 +465,15 @@ fabric.Collection = {
     });
   },
 
+  getObjectsByComponente_Id: function(componenteId) {
+    if (typeof componenteId === 'undefined') {
+      return this._objects.concat();
+    }
+    return this._objects.filter(function(o) {
+      return o.id === componenteId;
+    });
+  },
+
   getObjectsByComponenteId: function(componenteId) {
     if (typeof componenteId === 'undefined') {
       return this._objects.concat();
@@ -480,6 +489,15 @@ fabric.Collection = {
     }
     return this._objects.filter(function(o) {
       return o.id === id && o.tipo === tipo;
+    });
+  },
+
+  getObjectsByNome: function(nome) {
+    if (typeof nome === 'undefined') {
+      return this._objects;
+    }
+    return this._objects.filter(function(o) {
+      return o.nome === nome;
     });
   },
 
