@@ -1,7 +1,7 @@
 {
   "name": "nt-f4br1c",
   "description": "Object model for HTML5 canvas, and SVG-to-canvas parser. Backed by jsdom and node-canvas.",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "author": {
     "name": "Luiz Otávio Mendes de OLiveira",
     "email": "luizotavioautomacao@gmail.com"
